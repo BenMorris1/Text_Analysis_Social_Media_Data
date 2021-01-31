@@ -1,0 +1,21 @@
+1 - Install Cython:
+	pip install cython
+
+2 - Install C Compiler:
+	download Visual Studio and include the C++ Build Tools package. This will automaticall add the C compiler PATH to your environment variables
+
+3 - Create PYX File:
+	save the Python file you wish to run with .pyx extension
+
+4 - Create Setup File:
+	create setup.py file as in this directory
+
+5 - Run Setup File:
+	open Anaconda prompt in the directory containing your setup and pyx files
+	run 'python setup.py build_ext -- inplace
+	this will create the c file for you
+
+6 - Run File:
+	import 'name of pyx file' in another script and run functions from there
+
+https://stackoverflow.com/questions/52864588/how-to-install-cython-an-anaconda-64-bits-with-windows-10

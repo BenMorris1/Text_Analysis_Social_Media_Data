@@ -1,0 +1,52 @@
+Request:
+Type - Get request
+Endpoint - https://api.twitter.com/1.1/search/tweets.json
+
+Authentication:
+Type - OAuth 2.0
+Access Token - AAAAAAAAAAAAAAAAAAAAAGUAGwEAAAAA%2FwDXzylbGQAtCdXfYy7gKwld3KM%3DmtVeGIjcvXTq78x42AVKrQ92uAwGrnfwrF6U6ECrQPUZJa7PTC
+Header Prefix - Bearer
+
+Parameters:
+q - Trump, Biden, Republican, Democrat
+count - 100
+lang - en
+until - day before todays date YYYY-MM-DD
+geocode - latitude,longitude,radius(mi/km)
+
+Locations:
+West 
+	State - California
+	Population - 39.51m
+	Party - Democrat
+	Latitude - 35.55992
+	Longitude - -120.71456
+	Radius - 500km
+Midwest 
+	State - Illinois
+	Population - 12.67m
+	Party - Democrat
+	Latitude - 40.21284
+	Longitude - -89.22788
+	Radius - 250km
+Southwest 
+	State - Texas
+	Population - 28.99m
+	Party - Republican
+	Latitude - 31.01603
+	Longitude - -98.83643
+	Radius - 400km
+Northeast 
+	State - New York
+	Population - 19.45m
+	Party - Democrat
+	Latitude - 40.58133
+	Longitude - -73.32517
+	Radius - 75km
+Southeast 
+	State - Florida
+	Population - 21.48m
+	Party - Republican
+	Latitude - 27.82587
+	Longitude - -81.80228
+	Radius - 300km
