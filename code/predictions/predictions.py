@@ -128,8 +128,7 @@ data['Tweet'] = data['Tweet'].apply(lambda x: data_processing_functions.remove_s
 count_vect = pickle.load(open('../modelling/count_vect', 'rb'))
 tfidf_transformer = pickle.load(open('../modelling/tfidf_vect', 'rb'))
 
-data_split = [data[:5000], data[5001:10000], data[10001:15000], data[15001:20000], data[20001:25000], 
-              data[25001:30000], data[30001:35000], data[35001:40000], data[40001:45000], data[45001:50000], data[50001:]]
+# extracting features in batches due to memory load
 final_data = []
 x = 21
 
