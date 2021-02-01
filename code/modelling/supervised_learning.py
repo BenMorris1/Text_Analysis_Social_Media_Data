@@ -83,25 +83,25 @@ logistic_regression_predictions_tfidf = logistic_regression_tfidf.predict(X_test
 pickle.dump(logistic_regression_tfidf, open('logistic_regression', 'wb'))
 
 # naive bayes
-#naive_bayes = MultinomialNB()
-#naive_bayes_counts = naive_bayes.fit(X_train_count, y_train_count)
-#naive_bayes_tfidf = naive_bayes.fit(X_train_tfidf, y_train_tfidf)
-#naive_bayes_predictions_counts = naive_bayes_counts.predict(X_test_count)
-#naive_bayes_predictions_tfidf = naive_bayes_tfidf.predict(X_test_tfidf)
-#
-## support vector machine
-#support_vector_machine = SVC(gamma='scale')
-#support_vector_machine_counts = support_vector_machine.fit(X_train_count, y_train_count)
-#support_vector_machine_tfidf = support_vector_machine.fit(X_train_tfidf, y_train_tfidf)
-#support_vector_machine_predictions_counts = support_vector_machine_counts.predict(X_test_count)
-#support_vector_machine_predictions_tfidf = support_vector_machine_tfidf.predict(X_test_tfidf)
-#
-## random forest
-#random_forest = RandomForestClassifier()
-#random_forest_counts = random_forest.fit(X_train_count, y_train_count)
-#random_forest_tfidf = random_forest.fit(X_train_tfidf, y_train_tfidf)
-#random_forest_predictions_counts = random_forest_counts.predict(X_test_count)
-#random_forest_predictions_tfidf = random_forest_tfidf.predict(X_test_tfidf)
+naive_bayes = MultinomialNB()
+naive_bayes_counts = naive_bayes.fit(X_train_count, y_train_count)
+naive_bayes_tfidf = naive_bayes.fit(X_train_tfidf, y_train_tfidf)
+naive_bayes_predictions_counts = naive_bayes_counts.predict(X_test_count)
+naive_bayes_predictions_tfidf = naive_bayes_tfidf.predict(X_test_tfidf)
+
+# support vector machine
+support_vector_machine = SVC(gamma='scale')
+support_vector_machine_counts = support_vector_machine.fit(X_train_count, y_train_count)
+support_vector_machine_tfidf = support_vector_machine.fit(X_train_tfidf, y_train_tfidf)
+support_vector_machine_predictions_counts = support_vector_machine_counts.predict(X_test_count)
+support_vector_machine_predictions_tfidf = support_vector_machine_tfidf.predict(X_test_tfidf)
+
+# random forest
+random_forest = RandomForestClassifier()
+random_forest_counts = random_forest.fit(X_train_count, y_train_count)
+random_forest_tfidf = random_forest.fit(X_train_tfidf, y_train_tfidf)
+random_forest_predictions_counts = random_forest_counts.predict(X_test_count)
+random_forest_predictions_tfidf = random_forest_tfidf.predict(X_test_tfidf)
 
 # maximum entropy
 #max_entropy_counts = MaxentClassifier.train(nltk_train_counts, algorithm='GIS')#, n_estimators=2)
